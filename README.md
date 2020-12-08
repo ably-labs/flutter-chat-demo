@@ -14,14 +14,23 @@ You can check out a [short video demo of this application along with some explan
 
 `cd flutter-chat-demo/realtime_chat_ably`
 
+2. [Create a free account with Ably](https://www.ably.io/signup) to get your API Key.
 
-2. Run `flutter packages get` to install the dependencies
+3. Add a file called `config.dart` in `/realtime_chat_ably/lib` and paste the following: 
 
-3. Open two or more simulators on your system
+```
+const String AblyAPIKey = "YOUR-ABLY-API-KEY";
+```
 
-4. Run `flutter run -d all` to run the app on all the simulator devices
+Replace the placeholder with your own API Key
 
-When you send a message in one of the devices, it comes up in realtime on all the devices.
+4. Run `flutter packages get` to install the dependencies
+
+5. Open two or more simulators on your system
+
+6. Run `flutter run -d all` to run the app on all the simulator devices
+
+When you send a message in one of the devices, it should come up in realtime on all the devices.
 
 
 ---
